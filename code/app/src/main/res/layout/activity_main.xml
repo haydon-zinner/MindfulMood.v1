@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp"
+    android:gravity="center"
+    tools:context=".MainActivity">
+
+    <Button
+        android:layout_width="200dp"
+        android:layout_height="80dp"
+        android:text="@string/btn_log_mood"
+        android:textSize="16sp"
+        android:layout_gravity="center"
+        android:onClick="openMoodActivity"/>
+
+    <TextView
+        android:id="@+id/textViewLastEntry"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Last Entry: 12PM" />
+
+    <Button
+        android:layout_width="200dp"
+        android:layout_height="80dp"
+        android:text="@string/btn_log_food"
+        android:textSize="16sp"
+        android:layout_gravity="center"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:text="B: " />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:text="L: " />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:text="D: " />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:text="S: " />
+
+    </LinearLayout>
+
+    <Button
+        android:layout_width="200dp"
+        android:layout_height="80dp"
+        android:text="@string/btn_log_sleep"
+        android:textSize="16sp"
+        android:layout_gravity="center"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Entry Missing"
+        android:textSize="16sp"
+        android:layout_gravity="center"/>
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="30dp" />
+
+    <Button
+        android:layout_width="200dp"
+        android:layout_height="80dp"
+        android:textSize="16sp"
+        android:text="@string/btn_view_history"
+        android:layout_gravity="center"
+        android:onClick="viewHistory"/>
+
+    <Button
+        android:layout_width="200dp"
+        android:layout_height="80dp"
+        android:textSize="16sp"
+        android:text="@string/btn_graph_results"
+        android:layout_gravity="center"
+        android:onClick="openGraphActivity"/>
+
+</LinearLayout>

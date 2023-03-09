@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp"
+    tools:context=".MoodActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:onClick="goBackOneDay"
+            android:text="@string/btn_back"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/textView_currentDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:focusable="false"
+            android:onClick="openDatePicker"
+            android:text="@string/btn_date"
+            android:textAlignment="center"
+            android:textSize="20sp" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:text="@string/btn_forward"
+            android:textSize="16sp"
+            android:onClick="goForwardOneDay"/>
+
+    </RelativeLayout>
+
+
+    <EditText
+        android:id="@+id/textView_currentTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/label_time"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_gravity="center"
+        android:focusable="false"
+        android:onClick="openTimePicker"/>
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/label_rate_your_mood"
+        android:textSize="24sp" />
+
+    <SeekBar
+        android:id="@+id/slider"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:max="10"
+        android:progress="5"
+        android:progressTint="#00FFFFFF"
+        android:scrollIndicators="start|end"
+        android:scrollbarDefaultDelayBeforeFade="100" />
+
+    <EditText
+        android:id="@+id/description"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_gravity="center"
+        android:layout_weight="1"
+        android:background="#EFEFEF"
+        android:ems="10"
+        android:gravity="start|top"
+        android:hint="@string/txt_hint_moon"
+        android:inputType="textMultiLine"
+        android:textSize="16sp" />
+
+    <Button
+        android:id="@+id/save"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/btn_save"
+        android:onClick="onClick"/>
+
+
+</LinearLayout>

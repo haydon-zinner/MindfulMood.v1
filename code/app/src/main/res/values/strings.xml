@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">MindfulMood</string>
+    <string name="btn_log_mood">Log Mood</string>
+    <string name="btn_view_history">View History</string>
+    <string name="btn_graph_results">Graph Results</string>
+    <string name="btn_log_food">Log Food</string>
+    <string name="btn_log_sleep">Log Sleep</string>
+    <string name="btn_back"><![CDATA[<<]]></string>
+    <string name="label_date">Date</string>
+    <string name="btn_forward"><![CDATA[>>]]></string>
+    <string name="label_rate_your_mood">Rate Your Mood</string>
+    <string name="label_time">Time</string>
+    <string name="btn_save">Save</string>
+    <string name="txt_hint_moon">Why Do You Feel This Way?</string>
+    <string name="btn_date">Date</string>
+    <string name="btn_delete">Delete</string>
+    <string name="button_edit">Edit</string>
+    <string name="update">Update</string>
+    <string-array name="spinner_sort_by">
+        <item>Latest</item>
+        <item>Oldest</item>
+    </string-array>
+</resources>
